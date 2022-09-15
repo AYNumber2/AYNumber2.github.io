@@ -6,15 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite School Thing</title>
-    <style>
-        body {
-            background-color: peachpuff;
-        }
-    </style>
-</head>
-
-
-<body>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         #green {
             color: green;
@@ -39,79 +31,87 @@
             text-align: center;
         }
     </style>
-
-    <h1 style="font-family: Broadway; font-size: 500%">Alan's Favorite Thing About School</h1>
-    <h2>is...</h2>
-    <p class="big right">that if we have free period and nothing in middle band, we can leave school or just have 2 frees, leave school or
-        come to school early.</p>
-
-    <p id="green">so check your schedule now! At: </p>
-    <a href="https://www.epschedule.com/" target="_blank">EPSchedule!</a>
-    <br>
-    <img id="img" src="/favorite-thing/images/free.png">
-    <br>
-    <p style="background-color: aqua; text-align: center; font-size: 200%;">Why it's actually my favorite thing:</p>
-    <ol>
-        <li>It's just nice</li>
-        <li>I can meet with teachers</li>
-        <li>I can go get food if I'm hungry</li>
-        <li>Realistically, I can just have time to talk to people in-person</li>
-    </ol>
-    <button type="button" onclick="show()" id="btn">Show Funny Image</button>
-    <script>
-        function show() {
-            let image = document.getElementById("img");
-
-            image.src = "/favorite-thing/images/5head.png"
-            document.getElementById("btn").style.display = "none";
-        }
-    </script>
-    <p>What my schedule is like: </p>
-    <table cellspacing="10">
-        <thead>
-            <tr>
-            <th>Period</th>
-            <th>Class</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td id="td1">A</td>
-                <td>Data Science 2</td>
-            </tr>
-            <tr>
-                <td id="td1">B</td>
-                <td>Comp Gov</td>
-            </tr>
-            <tr>
-                <td id="td1">C</td>
-                <td>Adv Topics in Math</td>
-            </tr>
-            <tr>
-                <td id="td1">D</td>
-                <td>FREEEEEEEE</td>
-            </tr>
-            <tr>
-                <td id="td1">E</td>
-                <td>Adv Physics</td>
-            </tr>
-            <tr>
-                <td id="td1">F</td>
-                <td>FREEEEEEEE</td>
-            </tr>
-            <tr>
-                <td id="td1">G</td>
-                <td>Web Design 1 :)</td>
-            </tr>
-            <tr>
-                <td id="td1">H</td>
-                <td>Natural Lit</td>
-            </tr>
-        </tbody>
-    </table>
+</head>
 
 
+<body>
+    <div class="container">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>   
+    
+        <h1 style="font-family: Broadway; font-size: 500%">Alan's Favorite Thing About School</h1>
+        <h2>is...</h2>
+        <p class="big right">that if we have free period and nothing in middle band, we can leave school or just have 2 frees, leave school or
+            come to school early.</p>
+    
+        <p id="green">so check your schedule now! At: </p>
+        <a href="https://www.epschedule.com/" target="_blank">EPSchedule!</a>
+        <br>
+        <img id="img" src="/favorite-thing/images/free.png">
+        <br>
+        <p style="background-color: aqua; text-align: center; font-size: 200%;">Why it's actually my favorite thing:</p>
+        <ol>
+            <li>It's just nice</li>
+            <li>I can meet with teachers</li>
+            <li>I can go get food if I'm hungry</li>
+            <li>Realistically, I can just have time to talk to people in-person</li>
+        </ol>
+        <button type="button" onclick="show()" id="btn">Show Funny Image</button>
+        <script>
+            function show() {
+                let image = document.getElementById("img");
+    
+                image.src = "/favorite-thing/images/5head.png"
+                document.getElementById("btn").style.display = "none";
+            }
+        </script>
+        <p>What my schedule is like: </p>
+        <table cellspacing="10">
+            <thead>
+                <tr>
+                <th>Period</th>
+                <th>Class</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td id="td1">A</td>
+                    <td>Data Science 2</td>
+                </tr>
+                <tr>
+                    <td id="td1">B</td>
+                    <td>Comp Gov</td>
+                </tr>
+                <tr>
+                    <td id="td1">C</td>
+                    <td>Adv Topics in Math</td>
+                </tr>
+                <tr>
+                    <td id="td1">D</td>
+                    <td>FREEEEEEEE</td>
+                </tr>
+                <tr>
+                    <td id="td1">E</td>
+                    <td>Adv Physics</td>
+                </tr>
+                <tr>
+                    <td id="td1">F</td>
+                    <td>FREEEEEEEE</td>
+                </tr>
+                <tr>
+                    <td id="td1">G</td>
+                    <td>Web Design 1 :)</td>
+                </tr>
+                <tr>
+                    <td id="td1">H</td>
+                    <td>Natural Lit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
