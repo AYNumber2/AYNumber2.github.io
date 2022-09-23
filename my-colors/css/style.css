@@ -1,0 +1,53 @@
+.container {
+    border: 1.5px solid black;
+    padding: 50px 50px 15px;
+    margin: 50px;
+    background-color: white;
+}
+
+body {
+    background-color: rgb(230, 160, 116);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(160, 131, 103);
+}
+
+li a {
+    float: left;
+    border-right: 1px solid rgb(255, 255, 255);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(105, 19, 12);
+}
+
+.active {
+    background-color: rgb(152, 31, 21);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.heading {
+    font-family: Brush Script MT;
+    font-size: 350%;
+}
+
+p {
+    font-size: large;
+}
