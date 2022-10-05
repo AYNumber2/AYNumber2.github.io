@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onlick events and alerts?</h2>
+    <a href="https://eastsideprep.org" target="_blank"
+        onclick="alert('Warning! youa re navigating away from this page!')">
+        school website
+    </a>
+    <hr>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='batman'">Reveal</button>
+
+    <h2>Two Truth's and a Lie</h2>
+
+    <p>Which one is the lie?</p>
+
+    <ol id="truth">
+        <li>league</li>
+        <li>civ</li>
+        <li>osu</li>
+    </ol>
+
+    <br>    
+    <button
+        onclick="document.getElementById('truth').innerHTML='civ'; document.getElementById('truth').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('truth').style.display='none'">Hide</button>
+
+    <hr>
+    <h2>How do we change images with javascript?</h2>
+    <img src="images/cat8.jpeg" alt="cat1" width="30%" id="cat1">
+    <br>
+    <button onclick="document.getElementById('cat1').src='images/cat3.jpeg'">ShowCat</button>
+    <button onclick="document.getElementById('cat1').src='images/cat8.jpeg'">Go back</button>
+
+    <hr>
+    <h2>How do I change css styles with a button?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button
+        onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake:
+        Eat me</button>
+    <button
+        onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='50px'">Potion:
+        Drink me</button>
+    <button onclick="normalAlice();">normal</button>
+
+    <hr>
+    <h2>How do we return user input data?</h2>
+    <button onclick="askName();">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <hr>
+    <h2>Move me!</h2>
+    <p id="smile">:))))))))))))))</p>
+    <button onclick="document.getElementById('smile').style.textAlign='left'">left</button>
+    <button onclick="document.getElementById('smile').style.textAlign='center'">center</button>
+    <button onclick="document.getElementById('smile').style.textAlign='right'">right</button>
+
+    <hr>
+    <h2>Squish me!</h2>
+    <img src="images/cat3.jpeg" alt="cat1" width="30%" id="catSquish">
+    <br>
+    <button onclick="document.getElementById('catSquish').style.width='500px'; document.getElementById('catSquish').style.height='250px'">Squish</button>
+    <button onclick="document.getElementById('catSquish').style.width='200px'; document.getElementById('catSquish').style.height='550px'">Squish again</button>
+    <button onclick="document.getElementById('catSquish').style.width='30%'">normal</button>
+
+    <script>
+        function normalAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '18px';
+        }
+
+        function askName() {
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt("What is your name?");
+            if (name === "batman") {
+                nameParagraph.innerHTML = "Welcome to the batcave sir.";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + "! Nice to meet you."
+            }
+        }
+    </script>
+
+</body>
+
+</html>
