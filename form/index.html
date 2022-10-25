@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan's Truth and Lie Game</title>
+</head>
+<body>
+    <h1>Alan's Truth and a Lie Game</h1>
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name: </label>
+        <br>
+        <input type="text" name="greet" id="fname">
+        <br>
+        <label for="lname">Last Name: </label>
+        <br>
+        <input type="text" name="greet" id="lname">
+        <br>
+        <label for="age">Age: </label>
+        <br>
+        <input type="text" name="greet" id="age">
+        <br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <hr>
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia" id="chocolate">
+        <br>
+        <label for="chocolate">Dark Chocolate</label>
+        <input type="radio" name="trivia" id="tuna">
+        <br>
+        <label for="tuna">Canned Tuna</label>
+        <input type="radio" name="trivia" id="honey">
+        <br>
+        <label for="honey">Honey</label>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia();">
+    <hr>
+    <p>Two truths and a lie. Which one is the lie?</p>
+    <p id="trivia2-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia2" id="q1">
+        <label for="q1">I didn't get a smartphone until 11th grade.</label>
+        <br>
+        <input type="radio" name="trivia2" id="q2">
+        <label for="q2">I like cats over dogs.</label>
+        <br>
+        <input type="radio" name="trivia2" id="q3">
+        <label for="q3">I play piano.</label>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia2();">
+    <hr>
+    <p>Ok. I'll give you another chance. Two truths and a lie. Which two are true?</p>
+    <p id="trivia3-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia3" id="q1">
+        <label for="q1">I was born in the US.</label>
+        <br>
+        <input type="radio" name="trivia3" id="q2">
+        <label for="q2">I can speak three languages.</label>
+        <br>
+        <input type="radio" name="trivia3" id="q3">
+        <label for="q3">I have an older brother.</label>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia3();">
+    <script src="js/game.js"></script>
+</body>
+</html>
