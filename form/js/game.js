@@ -52,34 +52,3 @@ function trivia2(){
     }
     
 }   
-
-function trivia3(){
-    // trivia answer
-    let triviaAnswer = document.getElementById("trivia3-answer");
-    // get the checked values from form
-    let q1s = document.getElementById("q1").checked;
-    let q2s = document.getElementById("q2").checked;
-    let q3s = document.getElementById("q3").checked;
-
-    // decide what to "print"
-    if (q1s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth";
-    } else if (q2s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth";
-    } else if (q3s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth"
-    } else if (q1s && ){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth";
-    } else if (q2s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth"
-    } else if (q3s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth";
-    } else if (q3s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth"
-    } else if (q2s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth";
-    } else if (q3s){
-        triviaAnswer.innerHTML = fname + ", there is more than one truth"
-    }
-    
-}  
